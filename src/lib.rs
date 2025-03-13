@@ -3,13 +3,14 @@
 #![deny(missing_docs)]
 #![deny(warnings)]
 #![allow(dead_code)]
-#![no_std]
+#![cfg_attr(not(feature = "std"), no_std)]
 
 use hal::i2c::I2c;
 
 const DEFAULT_ADDRESS: u8 = 0x29;
 
 /// dummy
+#[derive(Debug, Clone, Copy)]
 pub struct VL53L0x<I2C: I2c> {
     com: I2C,
     /// dummy

@@ -10,6 +10,9 @@ repository = "https://github.com/copterust/vl53l0x"
 version = "1.0.1"
 edition = "2018"
 
+[features]
+std = []
+
 [dependencies]
 nb = "0.1"
 
