@@ -15,6 +15,7 @@ std = []
 
 [dependencies]
 nb = "0.1"
+thiserror = { version = "2.0.12", default-features = false}
 
 [dependencies.hal]
 version = "1.0"
